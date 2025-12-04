@@ -29,7 +29,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'multi-shop-django-8.onrender.com']
+    'Amir_host.onrender.com']
 
 # Application definition
 
