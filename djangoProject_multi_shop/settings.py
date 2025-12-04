@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-6yhv5g2rj6uwo&cwc$ml13^emfq5bj=)#$ryj()z0_psxue-34
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["Multi_shop_A.onrender.com", "localhost"]
 
 # Application definition
 
@@ -140,4 +140,6 @@ AUTH_USER_MODEL = 'account.User'
 AUTHENTICATION_BACKENDS = ["django.contrib.auth.backends.ModelBackend","account.authentication.EmailAuthBackend"]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://Multi_shop_A.onrender.com"
+]
