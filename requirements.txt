@@ -4,3 +4,8 @@ psycopg2-binary
 Pillow
 django-environ
 whitenoise
+django-unfold
+django-widget-tweaks
+django-render-partial
+ghasedakpack
+requests
