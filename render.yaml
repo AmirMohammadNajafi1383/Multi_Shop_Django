@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: my-django-app
+    env: python
+    branch: main
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn djangoProject_multi_shop.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
