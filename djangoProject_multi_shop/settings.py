@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-6yhv5g2rj6uwo&cwc$ml13^emfq5bj=)#$ryj()z0_psxue-34'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['Amir_host_final.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -139,3 +139,5 @@ AUTH_USER_MODEL = 'account.User'
 
 AUTHENTICATION_BACKENDS = ["django.contrib.auth.backends.ModelBackend","account.authentication.EmailAuthBackend"]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
