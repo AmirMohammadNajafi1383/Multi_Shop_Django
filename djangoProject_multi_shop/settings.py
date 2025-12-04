@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'multi-shop-django-3.onrender.com']
+    'multi-shop-django-4.onrender.com']
 
 # Application definition
 
