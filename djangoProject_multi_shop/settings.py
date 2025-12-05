@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-6yhv5g2rj6uwo&cwc$ml13^emfq5bj=)#$ryj()z0_psxue-34
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["django_project_amir_1404.onrender.com", "localhost"]
+ALLOWED_HOSTS = ["multi_shop1.onrender.com", "localhost"]
 
 # Application definition
 
@@ -141,5 +141,5 @@ AUTHENTICATION_BACKENDS = ["django.contrib.auth.backends.ModelBackend","account.
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 CSRF_TRUSTED_ORIGINS = [
-    "https://django_project_amir_1404.onrender.com"
+    "https://multi_shop1.onrender.com"
 ]
